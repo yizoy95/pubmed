@@ -57,7 +57,7 @@ extract_pubMed_data <- function (pubMed_query,
                                error = function(e) {
                                  NULL
                                })
-        required.cols <- c("title", "year", "journal", "keywords", 
+        required.cols <- c("pmid","title", "year", "journal", "keywords", 
                            "lastname", "firstname", "address", "email")
         
         
@@ -67,7 +67,7 @@ extract_pubMed_data <- function (pubMed_query,
                                error = function(e) {
                                  NULL
                                })
-        required.cols <- c("title", "year", "journal", 
+        required.cols <- c("pmid","title", "year", "journal", 
                            "lastname", "firstname", "address", "email")
         
       }
